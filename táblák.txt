@@ -1,0 +1,55 @@
+CREATE TABLE etelek(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(250) NOT NULL, 
+    stock INT NOT NULL DEFAULT 0,
+    price INT NOT NULL,
+
+
+    CONSTRAINT PK_products PRIMARY KEY(id),
+);
+
+CREATE TABLE italok(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(250) NOT NULL, 
+    stock INT NOT NULL DEFAULT 0,
+    price INT NOT NULL,
+
+
+    CONSTRAINT PK_products PRIMARY KEY(id),
+);
+
+CREATE TABLE menu(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(250) NOT NULL, 
+    stock INT NOT NULL DEFAULT 0,
+    price INT NOT NULL,
+
+
+    CONSTRAINT PK_products PRIMARY KEY(id),
+);
+
+CREATE TABLE elfogyott(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(250) NOT NULL, 
+
+
+    CONSTRAINT PK_products PRIMARY KEY(id),
+);
+
+CREATE TABLE delivery(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(250) NOT NULL, 
+    price INT NOT NULL,
+
+
+    CONSTRAINT PK_products PRIMARY KEY(id),
+);
+
+CREATE TABLE felhasznalok(
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(250) NOT NULL, 
+    password VARCHAR(250) NOT NULL,
+
+
+    CONSTRAINT PK_products PRIMARY KEY(id),
+);
